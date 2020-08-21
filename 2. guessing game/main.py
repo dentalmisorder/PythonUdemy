@@ -22,8 +22,8 @@ while lives > 0:
         print(f"\n{hearts}\n❤ U guessed it right! It was {guess_right} ❤\n{hearts}\n")
         guessed = True
         break
-    elif user_input != guess_right:
-        print("bruh dud try one more time")
+else:
+    print("bruh try one more time :c")
 
 print(f"\n{flowers}\n✿ Game ended! \n✿ Guessed: {guessed} \n✿ Lives left: {lives}/{lives_limit}\n{flowers}\n")
 if user_input != guess_right:
