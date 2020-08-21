@@ -19,11 +19,13 @@ while lives > 0:
     user_input = int(input(f"Guess the number from 0 to {guess_max}: "))
     lives -= 1
     if user_input == guess_right:
-        print(f"\n{hearts}\n❤ U guessed it right! It was {guess_right} ❤\n{hearts}\n")
+        print(f"\n{hearts}\n❤ U guessed it right! It was {guess_right}❤\n{hearts}\n")
         guessed = True
         break
+    elif user_input != guess_right:
+        print(f"nope, its not {user_input}, im sry")
 else:
-    print("bruh try one more time :c")
+    print("bruh sorry u didnt guessed it right :c")
 
 print(f"\n{flowers}\n✿ Game ended! \n✿ Guessed: {guessed} \n✿ Lives left: {lives}/{lives_limit}\n{flowers}\n")
 if user_input != guess_right:
