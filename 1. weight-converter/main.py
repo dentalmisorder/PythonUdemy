@@ -1,5 +1,5 @@
 #unfortunately python doesnt have multi-line comments :c
-#weight calculator for dummies
+#weight converter from KG to LBS and back
 
 tutorial = """
 ================｢HOW TO USE?｣================
