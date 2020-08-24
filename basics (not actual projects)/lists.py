@@ -21,3 +21,18 @@ for num in nums:
         nums.remove(num)
 
 print(nums) #nums without duplicates
+
+#============remove duplicates from list alternative ============
+
+nums = [2,2,3,3,4,6,3,4,7,2,1]
+nums_unique = []  #new unique list (empty)
+
+nums.sort() #sorting just for visual clearence
+
+print(nums) #nums with duplicates
+
+for num in nums:
+    if num not in nums_unique: #looking if new list has that num
+        nums_unique.append(num) #if not adding it to new list
+
+print(nums_unique) #nums without duplicates
