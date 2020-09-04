@@ -18,6 +18,4 @@ input_user = input("Phone: ")
 nums = input_user.split()
 
 for num in nums:
-    print(num)
-
-#print(numbers[input_user.rsplit()])
+    print(numbers[num])
