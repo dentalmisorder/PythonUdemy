@@ -36,3 +36,19 @@ for num in nums:
         nums_unique.append(num) #if not adding it to new list
 
 print(nums_unique) #nums without duplicates
+
+#===============remove last===================
+
+phrase = "all i want from life is small tiddie goth anime bich"
+
+phrase = phrase.split()
+
+print(phrase)
+
+phrase.pop() #will remove last by default or u can insert index (changes are saving tho)
+
+print(phrase)
+
+phrase.append("gf") #same but with adding in the end
+
+print(phrase)
