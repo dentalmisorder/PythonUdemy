@@ -40,3 +40,19 @@ print(f'\nprice of an ore -> coal is: {prices["ores"]["coal"]}') #coal cost in d
 prices["ores"]["diamond"] = 99.99 #adding one more ore
 
 print(f'\nprice of all ores: {prices["ores"]}') #list of all ores
+
+#======================more practice===============
+
+currency = "₽ (ruble)"
+my_games_prices = {
+    "Animal Crossing 2" : 399.99,
+    "Jump to rescue cuties" : 99.99,
+    "NSFW" : {
+        "Schoolgirls summer work" : 299.99,
+        "Anime tiddie island" : 299.99
+    }
+}
+
+print(f"\nJump to rescue cuties costs: {my_games_prices['Jump to rescue cuties']}{currency}")
+print(f"\nAnime tiddie island costs: {my_games_prices['NSFW']['Anime tiddie island']}{currency}")
+print(f"all the titles names i published: {my_games_prices.keys()}")
