@@ -4,6 +4,10 @@
 my_set = {1,2,2,2,2,2,3,3,3,3,4} #result is {1, 2, 3, 4}
 
 print(my_set)
+my_set.add(8) #only adds once cause its sets
+my_set.add(8)
+my_set.add(8)
+print(my_set)
 
 #we also can convert lists into a set
 
