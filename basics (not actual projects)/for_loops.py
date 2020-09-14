@@ -15,8 +15,14 @@ for letter in 'hewwo':
 my_published_games = {
     'Anime tiddie goths': 2.99,
     'Witch nekos': 5.99,
-    'Farm and grow': 9.99
+    'Farm and grow': 9.99,
+    'tiddie':1.99
 }
 
 for game_name, game_price in my_published_games.items():
-    print(f'Game title: {game_name} | Price: {game_price}$')
+    if game_name.lower() == 'tiddie':
+        print('no tiddies allowed')
+    elif game_name.lower() == 'booties':
+        print('booty is fine')
+    else:
+        print(f'Game title: {game_name} | Price: {game_price}$')
