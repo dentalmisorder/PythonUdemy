@@ -63,3 +63,11 @@ for a,b in zip(my_list1, my_list2):
 
 for item in zip(my_list1, my_list2):
     print(item) #or we can do the same like that
+
+#==============
+my_list = []
+
+for word in 'hewwo':
+    my_list.append(word)
+
+print(my_list)
