@@ -52,3 +52,14 @@ print(phrase)
 phrase.append("gf") #same but with adding in the end
 
 print(phrase)
+
+#=========== zipping
+
+my_list1 = [0,1,2,3,4,5]
+my_list2 = ['a','b','c']
+
+for a,b in zip(my_list1, my_list2):
+    print(a,b) #we can do unpacking like this with 2 variables
+
+for item in zip(my_list1, my_list2):
+    print(item) #or we can do the same like that
