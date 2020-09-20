@@ -15,7 +15,21 @@ opening_list = {
     'Kimi no na wa':['RADWIMPS — Sparkle', 'RADWIMPS — Yumetourou', 'RADWIMPS — Nandemonaiya']
 }
 
+singers_songs = [('iann dior', 8), ('juice wrld', 12), ('guccihighwaters', 6), ('familypet', 21), ('93feetofsmoke', 16)]
+
 #decalring functions
+
+def most_songs(singers_and_songs_count): #tuple unpacking with funcs
+    max_songs = 0
+    max_singer = ''
+
+    for singer, songs_count in singers_and_songs_count:
+        if(songs_count > max_songs):
+            max_songs = songs_count
+            max_singer = singer
+        else:
+            pass
+    print(f'{max_singer} got the most songs out of all with count of {max_songs}')
 
 def my_anime_list():
     for num, title_name in anime_list.items(): #unpacking
@@ -29,3 +43,4 @@ def my_opening_list():
 
 my_anime_list() #calling the func
 my_opening_list() #calling the func
+most_songs(singers_songs) #calling the func and giving it a value to work with
