@@ -62,8 +62,11 @@ class Player():
         ================================
         """)
 
-    def show_all_players():
+    def show_all_players(self):
         print("\n======[ALL PLAYERS REGISTERED]======")
+        print("""
+YOUR ID: {0} | YOUR NAME: {1} | YOUR JOB: {2} | YOUR LVL: {3} | YOUR PVP MODE: {4}
+        """.format(self.id, self.name, self.job, self.lvl, self.pvp_mode))
         for plr in Player.players_list:
             print(f"ID: {plr.id} | Name: {plr.name} | PVP Mode: {Player.pvp_mode}")
         print("====================================\n")
@@ -86,13 +89,13 @@ Toxic228 = Player("Toxic228", 1, "Garbage Collector", 2, 5)
 #creating ADMIN but still a PLAYER inherited class
 doulikedarkness = Admin("DoULikeDarkness", 9999, "Creator", 9999, 9999)
 
-Player.show_all_players() #all players list (they all have pvp mode)
+Spylestia.show_all_players() #all players list (they all have pvp mode)
 
 print("For today we are celebrating Halloween! And turning off PvP mode!")
 Player.pvp_mode = False
 
-Player.show_all_players() #all players list (as u can see all no pvp mode)
+MARSvechen.show_all_players() #all players list (as u can see all no pvp mode)
 
 doulikedarkness.ban_player(Toxic228) #banning a player that are toxic
 
-Player.show_all_players() #showing list again (no toxic players found xd)
+Spylestia.show_all_players() #showing list again (no toxic players found xd)
