@@ -41,3 +41,8 @@ def show_all_players():
     for plr in player.Player.players_list:
         print(f"ID: {plr.id} | Name: {plr.name} | PVP Mode: {player.Player.pvp_mode}")
     print("====================================\n")
+
+if __name__ == '__main__':
+    print('hints lib loaded directly..')
+else:
+    print('hints library imported..')

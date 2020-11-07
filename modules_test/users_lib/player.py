@@ -70,3 +70,8 @@ YOUR ID: {0} | YOUR NAME: {1} | YOUR JOB: {2} | YOUR LVL: {3} | YOUR PVP MODE: {
         for plr in Player.players_list:
             print(f"ID: {plr.id} | Name: {plr.name} | PVP Mode: {Player.pvp_mode}")
         print("====================================\n")
+
+if __name__ == '__main__':
+    print('player lib from users_lib loaded directly..')
+else:
+    print('player from users_lib imported..')

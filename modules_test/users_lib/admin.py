@@ -8,3 +8,8 @@ class Admin(player.Player):
         ✂ Player {0} got banned by {1}
         ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖ ✖
         """.format(player_to_ban.name, self.name))
+
+if __name__ == '__main__':
+    print('admin lib from users_lib loaded directly..')
+else:
+    print('admin from users_lib imported..')
