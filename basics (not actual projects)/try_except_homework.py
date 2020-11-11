@@ -9,7 +9,9 @@ def square_of():
             x = math.sqrt(int(user_input))
         except:
             print('whoops looks like u arent giving a correct number')
+            continue
         else:
             print('all good, square root of {0} is: {1}'.format(user_input, x))
+            break
 
 square_of()
