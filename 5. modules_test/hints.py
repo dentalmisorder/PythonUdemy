@@ -1,6 +1,6 @@
 from users_lib import player
 
-def about_stats(self):
+def about_stats():
     print("""
         ================================
         Level - Level gaining by exp
