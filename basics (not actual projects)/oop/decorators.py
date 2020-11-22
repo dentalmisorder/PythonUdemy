@@ -10,10 +10,16 @@ users_registered = {
     'BABYMETAL':'road_of_resistance123'
 }
 
+info_str = """
+    Personal ID: 666777
+    HOLO-Card: ..:L..SJ..:..S.S:::...
+    Personal Auth Code: GRJ5223 [DO NOT SHOW IT TO ANYONE!]
+    """
+
 def box_labels(func):
-    def wrap_up():
+    def wrap_up(text):
         print('===============START==============')
-        func()
+        func(text)
         print('================END===============')
 
     return wrap_up
@@ -48,19 +54,15 @@ def login_required(func):
     return wrap_up
 
 @box_labels
-def welcome_msg():
-    print(f'{colorama.Fore.YELLOW}Long time no see! Are you logging in for the first time?')
+def welcome_msg(text):
+    print(f'{colorama.Fore.YELLOW} {text}')
 
 @login_required
 def show_info():
-    welcome_msg()
-    print("""
-    Personal ID: 666777
-    HOLO-Card: ..:L..SJ..:..S.S:::...
-    Personal Auth Code: GRJ5223 [DO NOT SHOW IT TO ANYONE!]
-    """)
+    welcome_msg(info_str)
+
 
 if __name__ == "__main__":
-    show_info('какой то ник лоховской')
+    show_info('bla bla bla username')
 
 colorama.deinit()
