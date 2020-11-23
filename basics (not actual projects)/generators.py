@@ -18,3 +18,11 @@ def generate_rnd(low_num, high_num, amount):
 print(generate_rnd(15,22,5)) #generator at x030430 memory locate
 for n in generate_rnd(15,22,5): #actually calling it to print these nums
     print(n)
+
+#3. Use the iter() to convert str in iteratable obj:
+
+s = 'hewwo guys'
+
+s = iter(s)
+
+print(next(s))
