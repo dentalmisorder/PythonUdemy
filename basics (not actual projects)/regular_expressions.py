@@ -10,5 +10,3 @@ if all_matches != None:
     print('Matched something..')
     for matched_item in re.finditer(pattern, text_to_search):
         print(matched_item.span())
-
-print("ТЫ ДАУН!")
