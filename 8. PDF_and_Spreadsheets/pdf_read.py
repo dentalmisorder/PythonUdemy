@@ -11,3 +11,5 @@ page_one = pdf_file_binary.getPage(0)
 page_one_text = page_one.extractText()
 
 print(page_one_text)
+
+file.close()
